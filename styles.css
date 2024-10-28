@@ -148,3 +148,58 @@ h2 {
     background: #8ACB34; /* Background color on hover */
     color: #fff; /* Text color on hover */
 }
+
+
+
+.contact {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: #fff; /* Card background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact p {
+    margin: 10px 0;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact ul li {
+    margin: 5px 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #CB348A; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Space between fields */
+}
+
+.contact-form button {
+    background: #348ACB; /* Button color */
+    color: #fff; /* Text color */
+    padding: 10px 15px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background 0.3s ease; /* Smooth transition */
+}
+
+.contact-form button:hover {
+    background: #8ACB34; /* Button hover color */
+}
