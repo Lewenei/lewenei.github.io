@@ -14,9 +14,9 @@
         <p>Full Stack Software Developer</p>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index">Home</a></li>
+                <li><a href="projects">Projects</a></li>
+                <li><a href="contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -25,11 +25,11 @@
             <h2>Contact Me</h2>
             <p>If you would like to get in touch, feel free to reach out via the links below:</p>
             <ul>
-                <li>Email: <a href="mailto:brianngetich041@gmail.com">brianngetich041@gmail.com</a> <i class="fas fa-envelope"></i></li>
+                <li>Email: <a href="mailto:bngetich041@gmail.com">bngetich041@gmail.com</a> <i class="fas fa-envelope"></i></li>
                 <li>LinkedIn: <a href="https://www.linkedin.com/in/ngetich-brian-kipkirui/" target="_blank">linkedin.com/in/ngetich-brian-kipkirui</a> <i class="fab fa-linkedin"></i></li>
                 <li>GitHub: <a href="https://github.com/Lewenei/" target="_blank">github.com/Lewenei</a> <i class="fab fa-github"></i></li>
-                <li>Twitter: <a href="https://twitter.com/your_username" target="_blank">twitter.com/your_username</a> <i class="fab fa-twitter"></i></li>
-                <li>Reddit: <a href="https://www.reddit.com/user/your_username" target="_blank">reddit.com/user/your_username</a> <i class="fab fa-reddit"></i></li>
+                <li>Twitter: <a href="https://x.com/BrianLewenei" target="_blank">x.com/BrianLewenei</a> <i class="fab fa-twitter"></i></li>
+                <li>Reddit: <a href="https://www.reddit.com/user/Miserable_Mud7807/" target="_blank">reddit.com/user/Miserable_Mud7807/</a> <i class="fab fa-reddit"></i></li>
             </ul>
             <p>You can also fill out the contact form below, and I will get back to you as soon as possible:</p>
             <form id="contact-form" class="contact-form">
@@ -54,13 +54,13 @@
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
         (function() {
-            emailjs.init("writerbrayo@gmail.com"); // Replace with your EmailJS user ID
+            emailjs.init(""); // Replace with your EmailJS user ID
         })();
 
         document.getElementById('contact-form').addEventListener('submit', function(event) {
             event.preventDefault();
 
-            emailjs.sendForm('service_pjgfgwa', 'template_q74nu57', this)
+            emailjs.sendForm('', '', this)
                 .then(function() {
                     document.getElementById('form-message').innerText = 'Your message has been sent successfully!';
                     document.getElementById('contact-form').reset();

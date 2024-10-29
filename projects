@@ -14,9 +14,9 @@
         <p>Full Stack Software Developer</p>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index">Home</a></li>
+                <li><a href="projects">Projects</a></li>
+                <li><a href="contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -25,51 +25,37 @@
             <h2>Projects I have Worked On</h2>
             <div class="project-card">
                 <h3>Nyuki Manager</h3>
-                <p>A Laravel-based web application for managing beekeeping operations, integrated with Paystack for
-                    seamless payment processing.</p>
-                <p><b>Tech Stack:</b><i>PHP, MySQL, Laravel, NGINX, Linux</i></p>
+                <p>A Laravel-based web application for managing beekeeping operations, integrated with Paystack for seamless payment processing.</p>
+                <p><b>Tech Stack:</b><i> PHP, MySQL, Laravel, NGINX, Linux</i></p>
                 <a href="https://tunzanyuki.com/#tech" target="_blank">View Project</a>
             </div>
             <div class="project-card">
                 <h3>Farm Direct</h3>
-                <p>Farm Direct is a tool that connects farmers to markets. Facilitated by youth agripreneurs who lead
-                    local sales strategies by overseeing logistics and buyer linkages, it enables farmers to aggregate
-                    their produce, access profitable markets and meet larger orders from diverse buyers within their
-                    local markets..</p>
+                <p>Farm Direct connects farmers to markets, enabling them to aggregate produce, access profitable markets, and meet larger orders.</p>
                 <a href="https://producersdirect.org/farm-direct/" target="_blank">View Project</a>
             </div>
             <div class="project-card">
                 <h3>Croppie</h3>
                 <p>An Android app for crop management to help farmers monitor crop performance and improve yields.</p>
                 <a href="https://croppie.org/" target="_blank">View Project</a>
-                <a
-                    href=" https://bigdata.cgiar.org/inspire/inspire-challenge-2020/croppie-the-photocropping-app/ target=_blank">Project
-                    as 2020 Inspire Challenge Winner</a>
-
+                <a href="https://bigdata.cgiar.org/inspire/inspire-challenge-2020/croppie-the-photocropping-app/" target="_blank">Project as 2020 Inspire Challenge Winner</a>
             </div>
             <div class="project-card">
                 <h3>Amanda Freelance Solutions</h3>
-                <p>Amanda Freelance Solutions is a service provider specializing in freelance offerings, including
-                    academic writing, content creation, PowerPoint presentations, website and app development, and
-                    digital marketing. The company emphasizes customized solutions tailored to client needs, offering
-                    services across various fields like academic and business writing, marketing materials, and IT
-                    support.</p>
+                <p>Amanda Freelance Solutions specializes in services like academic writing, content creation, and digital marketing, with a focus on custom solutions.</p>
                 <a href="https://amandafreelancesolutions.com/" target="_blank">View Project</a>
             </div>
             <div class="project-card">
                 <h3>Carbon Pesa</h3>
-                <p>CarbonPesa is a Laravel-based web application designed to facilitate the management and trade of
-                    carbon credits, specifically for beekeepers in Kenya. The app aims to support conservation efforts
-                    while providing monetary incentives for local communities engaged in sustainable practices..</p>
-                <a href="https://amandafreelancesolutions.com/" target="_blank">View Project</a>
+                <p>CarbonPesa is a Laravel app designed to facilitate the management and trade of carbon credits for beekeepers in Kenya, supporting conservation and local communities.</p>
+                <p><b>Tech Stack:</b><i> PHP, MySQL, Laravel, NGINX, DigitalOcean, Linux</i></p>
+                <a href="https://github.com/Lewenei/carbonpesa" target="_blank">View Project</a>
             </div>
             <div class="project-card">
                 <h3>Pesa Mtaani</h3>
-                <p>PesaMtaani is a cash transfer system designed to empower beneficiaries in developing countries,
-                    specifically rural areas in Kenya. It leverages blockchain technology to reduce transaction costs
-                    and ensure seamless, secure fund transfers. The system supports USSD access, making it accessible
-                    even to users without smartphones or internet access.</p>
-                <a href="https://amandafreelancesolutions.com/" target="_blank">View Project</a>
+                <p>PesaMtaani is a cash transfer system using blockchain technology to reduce transaction costs and provide secure transfers, with USSD access for rural users.</p>
+                <p><b>Tech Stack:</b><i> PHP, Ethereum Blockchain, Web3, Node.js, MySQL, Laravel, NGINX, Linux</i></p>
+                <a href="https://github.com/Lewenei/pesa-mtaani" target="_blank">View Project</a>
             </div>
         </section>
     </main>

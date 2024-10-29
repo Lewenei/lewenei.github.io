@@ -13,13 +13,13 @@
         <h1>Brian Kipkirui Ngetich</h1>
         <img src="images/brian.jpeg" alt="Brian Kipkirui Ngetich" class="profile-img"> 
         <p>Full Stack Software Developer</p>
-        <p>Nairobi, Kenya | (+254) 726243509 | <a href="mailto:brianngetich041@gmail.com">brianngetich041@gmail.com</a>
+        <p>Nairobi, Kenya | +254726243509 | <a href="mailto:bngetich041@gmail.com">bngetich041@gmail.com</a>
         </p>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index">Home</a></li>
+                <li><a href="projects">Projects</a></li>
+                <li><a href="contact">Contact</a></li>
             </ul>
         </nav>
     </header>
