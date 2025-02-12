@@ -15,7 +15,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -25,45 +25,56 @@
             <h2>Projects I have Worked On</h2>
             <div class="project-card">
                 <h3>Nyuki Manager</h3>
-                <p>A Laravel-based web application for managing beekeeping operations, integrated with Paystack for seamless payment processing.</p>
+                <p>A Laravel-based web application for managing beekeeping operations, integrated with Paystack for
+                    seamless payment processing.</p>
                 <p><b>Tech Stack:</b><i> PHP, MySQL, Laravel, NGINX, Linux</i></p>
                 <a href="https://tunzanyuki.com/#tech" target="_blank">View Project</a>
             </div>
             <div class="project-card">
                 <h3>Farm Direct</h3>
-                <p>Farm Direct connects farmers to markets, enabling them to aggregate produce, access profitable markets, and meet larger orders.</p>
+                <p>Farm Direct connects farmers to markets, enabling them to aggregate produce, access profitable
+                    markets, and meet larger orders.</p>
                 <a href="https://producersdirect.org/farm-direct/" target="_blank">View Project</a>
-                <a href="https://producersdirect.org/producers-direct-utilizes-human-centered-design/" target="_blank">My Article About It</a>
-                <a href="https://milkeninstitute.org/content-hub/stories-field/milken-motsepe-prize-agritech-finalists-producers-direct" target="_blank">My Story</a>
+                <a href="https://producersdirect.org/producers-direct-utilizes-human-centered-design/"
+                    target="_blank">My Article About It</a>
+                <a href="https://milkeninstitute.org/content-hub/stories-field/milken-motsepe-prize-agritech-finalists-producers-direct"
+                    target="_blank">My Story</a>
             </div>
             <div class="project-card">
                 <h3>Croppie</h3>
                 <p>An Android app for crop management to help farmers monitor crop performance and improve yields.</p>
                 <a href="https://croppie.org/" target="_blank">View Project</a>
-                <a href="https://bigdata.cgiar.org/inspire/inspire-challenge-2020/croppie-the-photocropping-app/" target="_blank">Project as 2020 Inspire Challenge Winner</a>
+                <a href="https://bigdata.cgiar.org/inspire/inspire-challenge-2020/croppie-the-photocropping-app/"
+                    target="_blank">Project as 2020 Inspire Challenge Winner</a>
             </div>
             <div class="project-card">
                 <h3>Amanda Freelance Solutions</h3>
-                <p>Amanda Freelance Solutions specializes in services like academic writing, content creation, and digital marketing, with a focus on custom solutions.</p>
+                <p>Amanda Freelance Solutions specializes in services like academic writing, content creation, and
+                    digital marketing, with a focus on custom solutions.</p>
                 <a href="https://amandafreelancesolutions.com/" target="_blank">View Project</a>
             </div>
             <div class="project-card">
                 <h3>Carbon Pesa</h3>
-                <p>CarbonPesa is a Laravel app designed to facilitate the management and trade of carbon credits for beekeepers in Kenya, supporting conservation and local communities.</p>
+                <p>CarbonPesa is a Laravel app designed to facilitate the management and trade of carbon credits for
+                    beekeepers in Kenya, supporting conservation and local communities.</p>
                 <p><b>Tech Stack:</b><i> PHP, MySQL, Laravel, NGINX, DigitalOcean, Linux</i></p>
                 <a href="https://github.com/Lewenei/carbonpesa" target="_blank">View Project</a>
             </div>
             <div class="project-card">
                 <h3>Pesa Mtaani</h3>
-                <p>PesaMtaani is a cash transfer system using blockchain technology to reduce transaction costs and provide secure transfers, with USSD access for rural users.</p>
+                <p>PesaMtaani is a cash transfer system using blockchain technology to reduce transaction costs and
+                    provide secure transfers, with USSD access for rural users.</p>
                 <p><b>Tech Stack:</b><i> PHP, Ethereum Blockchain, Web3, Node.js, MySQL, Laravel, NGINX, Linux</i></p>
                 <a href="https://github.com/Lewenei/pesa-mtaani" target="_blank">View Project</a>
             </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Brian Kipkirui Ngetich</p>
+        <p>&copy; <span id="year"></span> Brian Kipkirui Ngetich</p>
     </footer>
 </body>
 
 </html>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
