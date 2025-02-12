@@ -203,3 +203,37 @@ h2 {
 .contact-form button:hover {
     background: #8ACB34; /* Button hover color */
 }
+
+.education {
+    margin: 20px auto;
+    max-width: 800px;
+    background: #fff; /* Card background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education h2 {
+    text-align: center;
+    color: #000;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
+    margin-top: 20px;
+}
+
+.education-card {
+    background: #e6e6e6; /* Same background as proficiency items */
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.education-card h3 {
+    margin: 0 0 10px;
+    color: #348ACB;
+}
