@@ -30,14 +30,14 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 5px;
 }
 
 nav a {
     color: #fff; /* Text color */
     background: #CB348A;
     text-decoration: none; /* Remove underline */
-    padding: 10px 15px; /* Add padding for better click area */
+    padding: 5px 5px; /* Add padding for better click area */
     border-radius: 5px; /* Rounded corners */
     transition: background 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
