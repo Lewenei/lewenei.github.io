@@ -279,3 +279,37 @@ h2 {
 .btn:hover {
     background-color: #8ACB34;
 }
+
+
+.certifications {
+    margin: 20px auto;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .certifications h2 {
+    text-align: center;
+    color: #000;
+  }
+  
+  .certification-card {
+    margin: 20px 0;
+    background: #e6e6e6;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .certification-card h3 {
+    margin-top: 0;
+    color: #348ACB;
+  }
+  
+  .certification-card iframe {
+    border: none;
+    border-radius: 5px;
+  }
+  

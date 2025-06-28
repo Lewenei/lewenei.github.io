@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Certifications | Brian Kipkirui Ngetich</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Brian Kipkirui Ngetich</h1>
+        <p>Full Stack Software Developer</p>
+        <p>AWS Certified Cloud Practitioner</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="certifications">
+      <h2>My Certifications</h2>
+
+      <div class="certification-card">
+        <h3>AWS Certified Cloud Practitioner Certification</h3>
+        <iframe src="certs/AWS Certified Cloud Practitioner certificate.pdf" width="100%" height="600px">
+          <p>Your browser does not support PDFs.
+            <a href="certs/AWS Certified Cloud Practitioner certificate.pdf" target="_blank">Download the PDF</a>.</p>
+        </iframe>
+      </div>
+
+      <div class="certification-card">
+        <h3>Google Africa Mobile Web Sepcialist Certification</h3>
+        <iframe src="certs/Brian Ngetich Mobile Web Specialist Certificate.pdf" width="100%" height="600px">
+          <p>Your browser does not support PDFs.
+            <a href="certs/Brian Ngetich Mobile Web Specialist Certificate.pdf" target="_blank">Download the PDF</a>.</p>
+        </iframe>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Brian Kipkirui Ngetich</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
