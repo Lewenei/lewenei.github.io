@@ -22,26 +22,55 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section class="projects">
             <h2>Projects I have Worked On</h2>
+
+            <!-- Project card -->
             <div class="project-card">
                 <h3>Nyuki Manager</h3>
                 <p>A Laravel-based web application for managing beekeeping operations, integrated with Paystack for
-                    seamless payment processing.</p>
+                    seamless
+                    payment processing.</p>
                 <p><b>Tech Stack:</b><i> PHP, MySQL, Laravel, NGINX, Linux</i></p>
-                <a href="https://tunzanyuki.com/#tech" target="_blank">View Project</a>
+                <a href="javascript:void(0)" onclick="openModal()">View Project</a>
             </div>
+
+            <!-- Nyuki Modal -->
+            <div id="nyukiModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <div class="modal-header">
+                        <h2>Nyuki Manager</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>This Laravel-based application helps manage beekeeping operations with Paystack integration
+                            for payments.</p>
+                        <p><b>Tech Stack:</b> PHP, MySQL, Laravel, NGINX, Linux</p>
+                        <div class="modal-images">
+                            <img src="images/tech/nyukimanager1.png" alt="Screenshot 1" onclick="zoomImage(this)">
+                            <img src="images/tech/nyukimanager2.png" alt="Screenshot 2" onclick="zoomImage(this)">
+                            <img src="images/tech/nyukimanager3.png" alt="Screenshot 3" onclick="zoomImage(this)">
+                            <img src="images/tech/nyukimanager4.png" alt="Screenshot 4" onclick="zoomImage(this)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other projects -->
             <div class="project-card">
                 <h3>Farm Direct</h3>
                 <p>Farm Direct connects farmers to markets, enabling them to aggregate produce, access profitable
-                    markets, and meet larger orders.</p>
+                    markets, and
+                    meet larger orders.</p>
                 <a href="https://producersdirect.org/farm-direct/" target="_blank">View Project</a>
                 <a href="https://producersdirect.org/producers-direct-utilizes-human-centered-design/"
-                    target="_blank">My Article About It</a>
+                    target="_blank">My Article</a>
                 <a href="https://milkeninstitute.org/content-hub/stories-field/milken-motsepe-prize-agritech-finalists-producers-direct"
                     target="_blank">My Story</a>
             </div>
+
             <div class="project-card">
                 <h3>Croppie</h3>
                 <p>An Android app for crop management to help farmers monitor crop performance and improve yields.</p>
@@ -49,42 +78,89 @@
                 <a href="https://bigdata.cgiar.org/inspire/inspire-challenge-2020/croppie-the-photocropping-app/"
                     target="_blank">Project as 2020 Inspire Challenge Winner</a>
             </div>
+
             <div class="project-card">
-            <h3>Amanda Freelance Solutions</h3>
-            <p>Amanda Freelance Solutions specializes in services like academic writing, content creation, and
-                digital marketing, with a focus on custom solutions.</p>
-            <a href="https://amandafreelancesolutions.com/" target="_blank">View Project</a>
+                <h3>Amanda Freelance Solutions</h3>
+                <p>Amanda Freelance Solutions specializes in services like academic writing, content creation, and
+                    digital
+                    marketing, with a focus on custom solutions.</p>
+                <a href="#">View Project</a>
             </div>
+
             <div class="project-card">
                 <h3>Open Source Warehouse Management System</h3>
-                <p>This is an Open Source Warehouse Management System built using Laravel 11. The system allows
-                    companies/supermarkets, and organizations to manage warehouse locations, products, suppliers, and
-                    more.</p>
+                <p>An Open Source Warehouse Management System built using Laravel 11. Allows organizations to manage
+                    warehouse locations, products, suppliers, and more.</p>
                 <a href="https://github.com/Lewenei/warehouse-management-system" target="_blank">View Project on
                     GitHub</a>
             </div>
+
             <div class="project-card">
                 <h3>Carbon Pesa</h3>
                 <p>CarbonPesa is a Laravel app designed to facilitate the management and trade of carbon credits for
-                    beekeepers in Kenya, supporting conservation and local communities.</p>
+                    beekeepers
+                    in Kenya.</p>
                 <p><b>Tech Stack:</b><i> PHP, MySQL, Laravel, NGINX, DigitalOcean, Linux</i></p>
                 <a href="https://github.com/Lewenei/carbonpesa" target="_blank">View Project</a>
             </div>
+
             <div class="project-card">
                 <h3>Pesa Mtaani</h3>
                 <p>PesaMtaani is a cash transfer system using blockchain technology to reduce transaction costs and
-                    provide secure transfers, with USSD access for rural users.</p>
+                    provide
+                    secure transfers, with USSD access for rural users.</p>
                 <p><b>Tech Stack:</b><i> PHP, Ethereum Blockchain, Web3, Node.js, MySQL, Laravel, NGINX, Linux</i></p>
                 <a href="https://github.com/Lewenei/pesa-mtaani" target="_blank">View Project</a>
             </div>
         </section>
     </main>
+
     <footer>
         <p>&copy; <span id="year"></span> Brian Kipkirui Ngetich</p>
     </footer>
+
+    <!-- Fullscreen Image Viewer -->
+    <div id="imageViewer" class="image-viewer">
+        <span class="close" onclick="closeImageViewer()">&times;</span>
+        <img id="fullImage" src="" alt="Fullscreen Image">
+    </div>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        function openModal() {
+            document.getElementById("nyukiModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("nyukiModal").style.display = "none";
+        }
+
+        // Close project modal if clicking outside content
+        window.onclick = function (event) {
+            let modal = document.getElementById("nyukiModal");
+            let viewer = document.getElementById("imageViewer");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            if (event.target == viewer) {
+                closeImageViewer();
+            }
+        }
+
+        // Open fullscreen image
+        function zoomImage(img) {
+            let viewer = document.getElementById("imageViewer");
+            let fullImage = document.getElementById("fullImage");
+            fullImage.src = img.src;
+            viewer.style.display = "flex";
+        }
+
+        // Close fullscreen image
+        function closeImageViewer() {
+            document.getElementById("imageViewer").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
-<script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-</script>
