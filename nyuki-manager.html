@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyuki Manager - Tunzanyuki System</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            overflow-y: auto; /* Enable vertical scroll if image is too tall */
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 80%;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add shadow around modal */
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .modal-close:hover {
+            color: #f1f1f1;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .image-container {
+                flex: 0 0 calc(50% - 20px); /* 2 images per row on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .image-container {
+                flex: 0 0 100%; /* 1 image per row on very small screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Nyuki Manager - Tunzanyuki System</h1>
+        <p>Screenshots of the Tunzanyuki Beekeeping Management System. Click to view larger images.</p>
+        <nav>
+            <ul>
+                <li><a href="projects.html">Back to Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="nyuki-images">
+            <div class="image-container">
+                <img src="images/tech/nyukimanager1.png" alt="Screenshot 1" class="responsive-image" onclick="openModal(this)">
+            </div>
+            <div class="image-container">
+                <img src="images/tech/nyukimanager2.png" alt="Screenshot 2" class="responsive-image" onclick="openModal(this)">
+            </div>
+            <div class="image-container">
+                <img src="images/tech/nyukimanager3.png" alt="Screenshot 3" class="responsive-image" onclick="openModal(this)">
+            </div>
+            <div class="image-container">
+                <img src="images/tech/nyukimanager4.png" alt="Screenshot 4" class="responsive-image" onclick="openModal(this)">
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for image zoom -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Brian Kipkirui Ngetich</p>
+    </footer>
+
+    <script>
+        // Set current year in the footer
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        // Function to open the modal with the clicked image
+        function openModal(imageElement) {
+            var modal = document.getElementById("imageModal");
+            var modalImage = document.getElementById("modalImage");
+
+            // Set the source of the modal image to the clicked image's source
+            modal.style.display = "block";
+            modalImage.src = imageElement.src;
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            var modal = document.getElementById("imageModal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
